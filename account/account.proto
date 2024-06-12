@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option go_package = "./pb";
+
+service Account {
+    rpc CreateBill(CreateBillRequest) returns (CreateBillResponse) {}
+    rpc DeleteBill(DeleteBillRequest) returns (DeleteBillResponse) {}
+}
+
+message CreateBillRequest {
+    string name = 1;
+    string description = 2;
+    string amount = 3;
+    int64 installment = 4; 
+}
+
+message CreateBillResponse {
+    string name = 1;
+    string description = 2;
+    string amount = 3;
+    int64 installment = 4; 
+}
+
+message DeleteBillRequest {
+    string id = 1;
+}
+
+message DeleteBillResponse {
+    string message = 1;
+}
