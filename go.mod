@@ -3,8 +3,10 @@ module github.com/gurodrigues-dev/account-gRPC
 go 1.22.1
 
 require (
+	github.com/lib/pq v1.10.9
 	google.golang.org/grpc v1.64.0
 	google.golang.org/protobuf v1.33.0
+	gopkg.in/yaml.v2 v2.4.0
 )
 
 require (
