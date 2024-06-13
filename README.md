@@ -1,8 +1,8 @@
 <h1 align="center"> account-gRPC </h1>
 
-## ⚙️ API Endpoints
+## ⚙️ API gRPC
 
-Todas as rotas possuem `api/v1`. Antecendo, como prefixo da rota.
+Para realizar as requisições é necessário importar o protobuffer `account/account.proto`
 
 ### RPC CreateBill
 
